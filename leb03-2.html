@@ -8,32 +8,39 @@
     <script src="xo.js" defer></script>
     <style>
         #a1,#a2,#a3,#b1,#b2,#b3 {
-            border-bottom: 10px black solid;
+            border-bottom: 10px #3caea3 solid;
         }
         #a1,#a2,#b1,#b2,#c1,#c2 {
-            border-right: 10px black solid;
+            border-right: 10px #3caea3 solid;
+        }
+        #tic {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #6b3074;
         }
     </style>
 </head>
 <body>
-    <h1>Tic tac toe</h1>
+    <h1 id="tic">Tic tac toe</h1>
     <table>
         <tr>
-            <td id="a1"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
-            <td id="a2"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
-            <td id="a3"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="a1"><img class="a" id="1" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="a2"><img class="a" id="2" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="a3"><img class="a" id="3" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
         </tr>
         <tr>
-            <td id="b1"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
-            <td id="b2"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
-            <td id="b3"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="b1"><img class="a" id="4" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="b2"><img class="a" id="5" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="b3"><img class="a" id="6" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
         </tr>
         <tr>
-            <td id="c1"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
-            <td id="c2"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
-            <td id="c3"><img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="c1"><img class="a" id="7" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="c2"><img class="a" id="8" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
+            <td id="c3"><img class="a" id="9" src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" width="112px" height="112px"></td>
         </tr>
-
     </table>
+    <h2 id="status"></h2>
 </body>
 </html>
